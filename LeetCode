@@ -1,0 +1,184 @@
+Leetcode Problems with solution
+⦁	1.LeetCode(String):Jewels and String
+⦁	import java.util.Scanner;
+⦁	public class second {
+⦁	public static int jeewels(String jewels,String Stones ){
+⦁	int count = 0;
+⦁	for(int i=0;i<Stones.length();i++){
+⦁	char stone = Stones.charAt(i);
+⦁	if(jewels.contains(String.valueOf(stone))){
+⦁	count++;
+⦁	}
+⦁	}return count;
+⦁	}
+⦁	public static void main(String args[]){
+⦁	Scanner sc = new Scanner(System.in);
+⦁	System.out.println("ENter jewels = ");
+⦁	String jewels = sc.nextLine();
+⦁	System.out.println("Enter the stones: ");
+⦁	String stones = sc.nextLine();
+⦁	int res = jeewels(jewels,stones);
+⦁	System.out.println(res);
+⦁	}
+⦁	}
+⦁	Output:
+⦁	"aaAB"
+⦁	"ABBBcd"
+⦁	4
+⦁	Note:
+⦁	if(jewels.contains(String.valueOf(stone))){
+⦁	we can also write it as a
+⦁	if(jewels.indexOf(stone)!=-1)
+⦁	
+⦁	
+⦁	2.LeetCode(string):Converting UpperCase to LowerCase
+⦁	import java.util.Scanner;
+⦁	class Solution {
+⦁	public String toLowerCase(String s) {
+⦁	String str = s.toLowerCase();
+⦁	return str;
+⦁	}
+⦁	public static void main(String args[]){
+⦁	Scanner sc = new Scanner(System.in);
+⦁	String s = sc.nextLine();
+⦁	Solution obj = new Solution();
+⦁	String res = obj.toLowerCase(s);
+⦁	System.out.print(res);
+⦁	}
+⦁	}
+⦁	Output:
+⦁	Input:"Hello"
+⦁	output:"hello
+⦁	
+⦁	
+⦁	3.LeetCode(String): Length of the last word.
+⦁	import java.util.Scanner;
+⦁	class Demo{
+⦁	public int lengthof(String s){
+⦁	s = s.trim();
+⦁	int last = s.lastIndexOf(' ');
+⦁	return s.length()-last-1;
+⦁	}
+⦁	public static void main(String args[]){
+⦁	Scanner sc = new Scanner(System.in);
+⦁	String s = sc.nextLine();
+⦁	Demo d = new Demo();
+⦁	System.out.print(d.lengthof(s));
+⦁	}
+⦁	}
+⦁	Output: " Hello World "
+⦁	5
+⦁	" fly me to the moon "
+⦁	4
+⦁	
+⦁	
+⦁	Leetcode(1):pairSum for given target
+⦁	import java.util.*;
+⦁	class Solution {
+⦁	public int[] twoSum(int[] nums, int target) {
+⦁	int[] store = new int[2];
+⦁	for(int i=0;i<nums.length;i++){
+⦁	for(int j=i+1;j<nums.length;j++){
+⦁	if(nums[i]+nums[j]==target){
+⦁	store[0] = i;
+⦁	store[1] = j;
+⦁	return store;
+⦁	}
+⦁	}
+⦁	}return store;
+⦁	}
+⦁	public static void main(String args[]){
+⦁	Scanner sc = new Scanner(System.in);
+⦁	int n = sc.nextInt();
+⦁	int a[] = new int[n];
+⦁	for(int i=0;i<n;i++){
+⦁	a[i] = sc.nextInt();
+⦁	}
+⦁	int target = sc.nextInt();
+⦁	Solution s = new Solution();
+⦁	System.out.print(Arrays.toString(s.twoSum(a,target)));
+⦁	}
+⦁	}
+⦁	Output:
+⦁	Example 1:
+⦁	Input: nums = [2,7,11,15], target = 9
+⦁	Output: [0,1]
+⦁	Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+⦁	Example 2:
+⦁	Input: nums = [3,2,4], target = 6
+⦁	Output: [1,2]
+⦁	Example 3:
+⦁	Input: nums = [3,3], target = 6
+⦁	Output: [0,1]
+⦁	
+⦁	
+⦁	Leetcode(String): FizzBuzz
+⦁	import java.util.*;
+⦁	class Solution {
+⦁	public List<String> fizzBuzz(int n) {
+⦁	List<String> ans = new ArrayList<>();
+⦁	for(int i=1;i<=n;i++){
+⦁	if(i%3==0 && i%5==0){
+⦁	ans.add("FizzBuzz");
+⦁	}
+⦁	else if(i%3==0){
+⦁	ans.add("Fizz");
+⦁	}
+⦁	else if(i%5==0){
+⦁	ans.add("Buzz");
+⦁	}
+⦁	else{
+⦁	ans.add(String.valueOf(i));
+⦁	}
+⦁	}   return ans;
+⦁	}
+⦁	public static void main(String args[]){
+⦁	Scanner sc = new Scanner(System.in);
+⦁	int n = sc.nextInt();
+⦁	Solution ans = new Solution();
+
+⦁	System.out.print(ans.fizzBuzz(n));
+⦁	}
+⦁	}
+⦁	Output:
+⦁	Example 1:
+⦁	Input: n = 3
+⦁	Output: ["1","2","Fizz"]
+⦁	Example 2:
+⦁	Input: n = 5
+⦁	Output: ["1","2","Fizz","4","Buzz"]
+⦁	Example 3:
+⦁	Input: n = 15
+⦁	Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
+⦁	
+⦁	
+⦁	Leetcode(String):ToCheckStringsEqual
+⦁	import java.util.Scanner;
+⦁	import java.util.Arrays;
+⦁	public class A {
+⦁	public boolean equal(String[] w1,String[] w2){
+⦁	String s1 ="";
+⦁	String s2 = "";
+⦁	for(String w:w1){
+⦁	s1+=w;
+⦁	}
+⦁	for(String w:w2){
+⦁	s2+=w;
+⦁	}
+⦁	return s1.equals(s2);
+⦁	}
+⦁	public static void main(String args[]){
+⦁	Scanner sc = new Scanner(System.in);
+
+⦁	String[] w1 = sc.nextLine().split(" ");
+⦁	
+⦁	String[] w2 = sc.nextLine().split(" ");
+⦁	A obj = new A();
+⦁	boolean res = obj.equal(w1,w2);
+⦁	System.out.print(res);
+⦁	}
+⦁	}
+⦁	Output:
+⦁	"ab" "c"
+⦁	"abc"
+⦁	true
