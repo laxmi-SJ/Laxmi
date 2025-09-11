@@ -72,7 +72,7 @@ Leetcode Problems with solution
 ⦁	4
 ⦁	
 ⦁	
-⦁	Leetcode(1):pairSum for given target
+⦁	4.Leetcode(1):pairSum for given target
 ⦁	import java.util.*;
 ⦁	class Solution {
 ⦁	public int[] twoSum(int[] nums, int target) {
