@@ -112,7 +112,7 @@ Leetcode Problems with solution
 ⦁	Output: [0,1]
 ⦁	
 ⦁	
-⦁	Leetcode(String): FizzBuzz
+⦁	5.Leetcode(String): FizzBuzz
 ⦁	import java.util.*;
 ⦁	class Solution {
 ⦁	public List<String> fizzBuzz(int n) {
