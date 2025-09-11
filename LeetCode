@@ -136,7 +136,6 @@ Leetcode Problems with solution
 ⦁	Scanner sc = new Scanner(System.in);
 ⦁	int n = sc.nextInt();
 ⦁	Solution ans = new Solution();
-
 ⦁	System.out.print(ans.fizzBuzz(n));
 ⦁	}
 ⦁	}
@@ -152,7 +151,7 @@ Leetcode Problems with solution
 ⦁	Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
 ⦁	
 ⦁	
-⦁	Leetcode(String):ToCheckStringsEqual
+⦁	6.Leetcode(String):ToCheckStringsEqual
 ⦁	import java.util.Scanner;
 ⦁	import java.util.Arrays;
 ⦁	public class A {
@@ -183,9 +182,8 @@ Leetcode Problems with solution
 ⦁	"abc"
 ⦁	true
 
-LeetCode: Find the closest One
+7.LeetCode: Find the closest One
 import java.util.Scanner;
-
 class Solution {
     public static int firstCase(int x, int y, int z) {
         int d1 = Math.abs(x - z); // Distance for Person 1
