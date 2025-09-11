@@ -182,13 +182,13 @@ Leetcode Problems with solution
 ⦁	"abc"
 ⦁	true
 
+
 7.LeetCode: Find the closest One
 import java.util.Scanner;
 class Solution {
     public static int firstCase(int x, int y, int z) {
         int d1 = Math.abs(x - z); // Distance for Person 1
         int d2 = Math.abs(y - z); // Distance for Person 2
-
         if (d1 < d2) {
             return 1;  // Person 1 arrives first
         } else if (d1 > d2) {
@@ -197,7 +197,6 @@ class Solution {
             return 0;  // Both arrive at same time
         }
     }
-
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 
