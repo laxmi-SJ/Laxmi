@@ -258,7 +258,7 @@ Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 
-LeetCode:Add two numbers without using + operature.
+9.LeetCode:Add two numbers without using + operature.
 import java.util.*;
 class second{
   public int add(int a,int b){
