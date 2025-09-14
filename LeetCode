@@ -244,5 +244,5 @@ solution s = new Solution();
 System.out.print(s.isPalindrome(n));
 }
 }
-System.out.print(
+
 
