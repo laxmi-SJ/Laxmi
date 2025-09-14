@@ -257,3 +257,25 @@ Input: x = 10
 Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
+LeetCode:Add two numbers without using + operature.
+import java.util.*;
+class second{
+  public int add(int a,int b){
+    while(b!=0){
+    int car = (a&b)<<1;
+    a = a^b;
+    b = car;
+    }return a;
+  }
+  public static void main(String args[]){
+    Scanner sc =  new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    second s = new second();
+    System.out.print(s.add(a,b));
+  }
+}
+Output:
+3(a)
+5(b)
+8
