@@ -222,7 +222,7 @@ Output:1 1 5
 1
 
 
-
+Leetcode(9):Checking the given number is palindrome or not.
 class Solution {
     public boolean isPalindrome(int x) {
       int rev=0;
