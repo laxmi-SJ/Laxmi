@@ -280,3 +280,17 @@ Output:
 3(a)
 5(b)
 8
+
+10.Leetcode:whether the number is power of two or not.
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        
+       if(n<=0){
+        return false;
+       }
+       while(n%2==0){
+        n/=2;
+       }
+       return n==1;
+}
+}
