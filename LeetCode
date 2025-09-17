@@ -326,7 +326,8 @@ class A{
 for(int i =0;i<n;i++){
 System.out.print(a[i]+" ")   
 Remove system.out.print(Arrays.toString(a)
-*/}
+*/
+}
 }
     public  void reverse(int a[],int start,int end){
         while(start<end){
