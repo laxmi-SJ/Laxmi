@@ -52,7 +52,7 @@ Output:
 0 8 6 8 2 0 -1 7 5 9 -3 
 9 1 0 0 4 25 36 49 64 64 81 
 
-2.
+2.Sorting the first 0's and 1's.
 import java.util.*;
 class A{
     public void rotate(int a[]){
