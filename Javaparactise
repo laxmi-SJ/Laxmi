@@ -1,3 +1,4 @@
+1.Sorting elements even elements first and odd elements last. Square the numbers.
 import java.util.*;
 class A{
     public void rotate(int a[]){
