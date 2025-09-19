@@ -96,3 +96,32 @@ Output:
 10
 0 1 0 1 1 1 0 1 1 0
 0 0 0 0 0 1 1 1 1 1 1
+
+4.Sum of prefix elements from start to end.
+import java.util.*;
+class A{
+    public int rotate(int a[],int n,int r,int l){
+    
+    int sum = 0;
+    for(int i=r;i<=l;i++){
+        sum=a[i-1]+sum;
+    }
+    return sum;
+    
+}
+
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+        int a[] = new int[n+1];
+        for(int i=0;i<n;i++){
+            a[i]= sc.nextInt();
+        }
+        int r = sc.nextInt();
+        int l = sc.nextInt();
+        A ans = new A();
+        int res = ans.rotate(a,n,r,l);
+        System.out.print(res);
+     //System.out.print(Arrays.toString(ans));  
+    }
+}
