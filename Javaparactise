@@ -218,3 +218,36 @@ Output:
 30 36 42 -->Array after multiplication
 66 81 96
 102 126 150
+
+6.Transpose of matrix.
+import java.util.Scanner;
+class A{
+    public int[][] prefSum(int a1[][],int n,int m){
+     int ans[][] = new int[n][m];
+     for(int i =0;i<n;i++){
+        for(int j =0;j<m;j++){
+            ans[i][j]=a1[j][i];
+        }
+     }return ans;   
+}
+public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    int m = sc.nextInt();
+    int a1[][] = new int[n][m];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+        a1[i][j] = sc.nextInt();
+    }
+}
+    A ans = new A();
+    int pref[][] = ans.prefSum(a1,n,m);
+   for(int i =0;i<n;i++){
+    for(int j=0;j<n;j++){
+     System.out.print(pref[i][j]+" ");
+   }
+   System.out.println();
+}
+    
+}
+}
