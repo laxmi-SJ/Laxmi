@@ -202,8 +202,7 @@ int a2[][] = new int[n][m];
      System.out.print(pref[i][j]+" ");
    }
    System.out.println();
-}
-    
+}    
 }
 }
 Output:
@@ -218,6 +217,7 @@ Output:
 30 36 42 -->Array after multiplication
 66 81 96
 102 126 150
+
 
 6.Transpose of matrix.
 import java.util.Scanner;
