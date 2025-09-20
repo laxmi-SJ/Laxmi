@@ -166,8 +166,7 @@ Output:
 5
 14
 
-5.Multi[lication of two Variables.
-
+5.Multiplication of two Variables.
 import java.util.Scanner;
 class A{
     public int[][] prefSum(int a1[][],int a2[][],int n,int m){
@@ -180,8 +179,6 @@ class A{
         }
      }return ans;   
 }
-
-
 public static void main(String args[]){
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
@@ -209,3 +206,15 @@ int a2[][] = new int[n][m];
     
 }
 }
+Output:
+3-->n
+3-->m
+1 2 3-->First array
+4 5 6
+7 8 9
+1 2 3-->Second array
+4 5 6
+7 8 9
+30 36 42 -->Array after multiplication
+66 81 96
+102 126 150
