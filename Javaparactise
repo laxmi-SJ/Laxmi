@@ -165,3 +165,47 @@ Output:
 2
 5
 14
+
+5.Multi[lication of two Variables.
+
+import java.util.Scanner;
+class A{
+    public int[][] prefSum(int a1[][],int a2[][],int n,int m){
+     int ans[][] = new int[n][m];
+     for(int i =0;i<n;i++){
+        for(int j =0;j<m;j++){
+            for(int k=0;k<n;k++){
+                ans[i][j]+=a1[i][k]*a2[k][j];
+            }
+        }
+     }return ans;   
+}
+
+
+public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    int m = sc.nextInt();
+    int a1[][] = new int[n][m];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+        a1[i][j] = sc.nextInt();
+    }
+}
+int a2[][] = new int[n][m];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+        a2[i][j] = sc.nextInt();
+    }
+}
+    A ans = new A();
+    int pref[][] = ans.prefSum(a1,a2,n,m);
+   for(int i =0;i<n;i++){
+    for(int j=0;j<n;j++){
+     System.out.print(pref[i][j]+" ");
+   }
+   System.out.println();
+}
+    
+}
+}
