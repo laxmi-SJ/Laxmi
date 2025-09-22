@@ -291,3 +291,51 @@ Output:
 1 4 7 -->Transpose matrix
 2 5 8
 3 6 9
+
+7.Sum of diagonal(dsum) and opposite diagonal(odsum) elements.
+import java.util.Scanner;
+public class fifth {
+    public void transpose(int a[][],int n,int m){
+        for(int i =0;i<n;i++){
+            for(int j =0;j<m;j++){
+                System.out.print(a[i][j]+" ");
+            }System.out.println();
+        }
+        int dsum=0;
+        int odsum =0;
+        for(int i =0;i<n;i++){
+            for(int j =0;j<n;j++){
+                if(i==j){
+                    dsum+=a[i][j];
+                }
+                if(i+j==n-1){
+                    odsum+=a[i][j];
+                }
+            }
+        }
+        System.out.println("Sum of diagonal elements: "+dsum);
+        System.out.print("Sum of opposite diagonal elements: "+odsum);
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int a[][] = new int[n][m];
+        for(int i =0;i<n;i++){
+            for(int j =0;j<m;j++){
+                a[i][j]= sc.nextInt();
+            }
+        }
+        fifth ans = new fifth();
+    ans.transpose(a,n,m);
+    }
+}
+Output:
+3 -->n
+3 -->m
+7 9 2 3 4 6 1 0 8 -->array elements.
+7 9 2 -->printing 2D array.
+3 4 6
+1 0 8
+Sum of diagonal elements: 19
+Sum of opposite diagonal elements: 7
