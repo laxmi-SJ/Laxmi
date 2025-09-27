@@ -381,3 +381,21 @@ public class ex {
 Output:
 8
 0 1 1 2 3 5 8 13 
+
+import java.util.Scanner;
+public class ex {
+    static int fib(int p,int q){
+         if(q==0){
+            return 1;
+         }
+         return p*fib(p,q-1);
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        
+            System.out.print(fib(5,4));
+        
+        }
+    }
+
+
