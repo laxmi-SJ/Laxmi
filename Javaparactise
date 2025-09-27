@@ -381,6 +381,8 @@ public class ex {
 Output:
 8
 0 1 1 2 3 5 8 13 
+
+
 10.p^q power of a given number.
 import java.util.Scanner;
 public class ex {
@@ -397,5 +399,6 @@ public class ex {
         
         }
     }
+Output:
 
 
