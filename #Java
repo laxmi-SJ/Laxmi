@@ -23,4 +23,12 @@ public class ex {
  }  
 }
 Output:
-
+5
+1 2 3 4 5
+3
+Found at pos: 2
+PS C:\Users\laxmi\OneDrive\Desktop\javaF> cd "c:\Users\laxmi\OneDrive\Desktop\javaF\" ; if ($?) { javac ex.java } ; if ($?) { java ex }
+5
+1 2 3 4 5
+7
+Not found
