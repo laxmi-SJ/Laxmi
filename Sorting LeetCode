@@ -25,3 +25,4 @@ class Solution {
         System.out.print(s.containsDuplicate(a));
     }
 }
+Output:
