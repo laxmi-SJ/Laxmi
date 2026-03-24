@@ -25,6 +25,7 @@ class Solution {
         System.out.print(s.containsDuplicate(a));
     }
 }
+Explaination: You can use two for loop to check duplicates but the time complexity is O(n^2) which exceeds the time, whereas using HashSet the time complexity is O(n) because using only one for loop.
 Output:
 Example 1:
 Input: nums = [1,2,3,1]
