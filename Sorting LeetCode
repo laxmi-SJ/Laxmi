@@ -1,0 +1,27 @@
+import java.util.*;
+
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+
+        HashSet<Integer> set = new HashSet<>();
+        for(int num:nums){
+            if(set.contains(num)){
+                return true;
+            }
+            set.add(num);
+        }
+        return false;
+    }
+
+    public static void main(String args[]){
+        Solution s = new Solution();
+        Scanner sc = new Scanner(System.in);
+
+        int a[] = new int[10];
+        for(int i = 0; i < 10; i++){
+            a[i] = sc.nextInt();
+        }
+
+        System.out.print(s.containsDuplicate(a));
+    }
+}
