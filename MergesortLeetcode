@@ -1,0 +1,54 @@
+Given an array of integers nums, sort the array in ascending order and return it.
+class Solution {
+    public int[] sortArray(int[] nums) {
+        int li = 0;
+        int ri = nums.length-1;
+        divide(nums,li,ri);
+        return nums;
+    }
+    public static void divide(int a[],int li,int ri){
+        if(li>=ri){
+            return;
+        }
+        int mid = li + (ri-li)/2;
+        divide(a,li,mid);
+        divide(a,mid+1,ri);
+        conquer(a,li,mid,ri);
+    }
+    public static int[] conquer(int a[],int li,int mid,int ri){
+        int ind1 = li;
+        int ind2 = mid+1;
+        int x = 0;
+        int n = a.length;
+        int merged[] = new int[ri-li+1];
+        while(ind1<=mid && ind2<=ri){
+            if(a[ind1]<=a[ind2]){
+                merged[x++] = a[ind1++];
+            }
+            else{
+                merged[x++] = a[ind2++];
+            }
+        }
+        while(ind1<=mid){
+            merged[x++] = a[ind1++];
+        }
+        while(ind2<=ri){
+            merged[x++] = a[ind2++];
+        }
+        int k=0;
+        for(int i=li;i<=ri;i++){
+            a[i] = merged[k++];
+        }
+        return merged;
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        Solution s = new Solution();
+        int n = sc.nextInt();
+        int a[] = new int[n];
+        for(int i=0;i<n;i++){
+            a[i] = sc.nextInt();
+        }
+        s.sortArray(a);
+    }
+}
