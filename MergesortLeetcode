@@ -1,4 +1,5 @@
 Given an array of integers nums, sort the array in ascending order and return it.
+
 class Solution {
     public int[] sortArray(int[] nums) {
         int li = 0;
